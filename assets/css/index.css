@@ -37,6 +37,9 @@ body {
                 background: var(--background2);
                 position: absolute;
                 width: 100%;
+                max-width: 100%;
+                overflow: hidden;
+                overflow-y: auto;
                 top: 100%;
 
                 #nerotvlive,#jxhnvncnt {
