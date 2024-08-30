@@ -1,0 +1,27 @@
+body {
+    #main {
+        #content {
+            #start {
+                user-select: text;
+                background: var(--background2);
+                position: absolute;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 6rem 0 0 0;
+
+                .card {
+                    width: 90%;
+                    max-width: 75rem;
+                }
+
+                #footer {
+                    margin-top: 1rem;
+                    width: calc(100% - 4rem);
+                }
+            }
+        }
+    }
+}
