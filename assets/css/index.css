@@ -50,6 +50,7 @@ body {
                 }
 
                 .creator-content {
+                    position: relative;
                     justify-content: center;
                     padding: 2rem 0.5rem 5rem 0.5rem;
                     background: var(--background3);
@@ -103,6 +104,24 @@ body {
                             background: var(--foreground);
                             color: var(--background);
                         }
+                    }
+
+
+                }
+
+                .creator-content.active {
+                    .description {
+                        width: 90%;
+                    }
+
+                    .links {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: flex;
+                        background: none;
+                        position: absolute;
+                        bottom: 1rem;
                     }
                 }
             }

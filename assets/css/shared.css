@@ -53,6 +53,10 @@ body {
                 }
             }
 
+            .toggle {
+                display: none;
+            }
+
             .title:hover {
                 cursor: pointer;
                 h3 {
@@ -86,6 +90,42 @@ body {
             top: 1rem;
             left: 15%;
             right: 15%;
+        }
+
+        #menu.collapsed {
+
+            .toggle {
+                position: absolute;
+                top: 0; right: 0;
+                padding: 1rem;
+                opacity: 0.8;
+                font-size: 2rem;
+                color: var(--foreground2);
+                display: inherit;
+            }
+
+            .toggle:hover {
+                cursor: pointer;
+                opacity: 1;
+                background: var(--background2);
+            }
+
+            .links {
+                height: fit-content;
+                background: var(--background3);
+                display: none;
+                flex-direction: column;
+                top: 4rem;
+                right: 0;
+
+                a {
+                    margin: 0.25rem;
+                }
+            }
+
+            .links.active {
+                display: flex;
+            }
         }
 
         #content {
