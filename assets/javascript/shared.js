@@ -7,7 +7,7 @@ function initMenu() {
         if(menu.classList.contains("collapsed")) {
             menu.classList.remove("collapsed");
         }
-    } else if(innerWidth>600) {
+    } else if(innerWidth>640) {
         if(menu.classList.contains("active")) {
             menu.classList.remove("active");
         }
