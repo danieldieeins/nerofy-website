@@ -9,7 +9,8 @@
     --foreground2: #dddddd;
     --foreground3: #ffffff15;
 
-    --accent: #3f9cf8;
+    --accent: #2b69e8;
+    --accent2: #3f9cf8;
     --shadow: #000000;
 }
 
@@ -81,6 +82,24 @@ body {
                 a:hover {
                     cursor: pointer;
                     background: var(--foreground3);
+                }
+
+                a.button {
+                    position: relative;
+                    background: var(--accent);
+                    padding-left: 2rem;
+
+                    i {
+                        position: absolute;
+                        font-size: 1.5rem;
+                        left: 0.25rem;
+                        top: 0.7rem;
+                    }
+                }
+
+                a.button:hover {
+                    background: var(--accent2);
+                    color: var(--background);
                 }
             }
         }
