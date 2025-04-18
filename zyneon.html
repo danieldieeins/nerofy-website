@@ -8,7 +8,7 @@
         <link id="style-font" rel="stylesheet" href="assets/fonts/OpenSans/OpenSans.css">
         <link id="style-icons" rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" >
         <link id="style-page" rel="stylesheet" href="assets/css/index.css">
-        <link rel="icon" type="image/png" href="assets/images/logos/nerofy/light_lined.png"/>
+        <link rel="icon" type="image/webp" href="new/assets/nerofy/img/logos/nerofy/light_lined.webp"/>
         <script src="assets/javascript/shared.js"></script>
         <script src="assets/javascript/index.js"></script>
         <style>
@@ -30,22 +30,13 @@
                         text-decoration: underline !important;
                     }
 
-                    a {
-                        color: white;
-                        text-decoration: none;
-                    }
-
-                    a:hover {
-                        cursor: pointer;
-                        color: deepskyblue;
-                        text-decoration: underline;
-                    }
-
                     a.error {
-                        color: #973b3b !important;
+                        color: #afefff !important;
+                        opacity: 0.5;
                     }
 
                     a.error:hover {
+                        color: #afefff !important;
                         text-decoration: none !important;
                         cursor: not-allowed !important;
                     }
@@ -76,36 +67,21 @@
                 }
             }
 
-            #menu {
-                display: none !important;
-            }
-
-            #footer {
-                display: flex;
-                align-content: center;
-                justify-content: center;
-
-                p {
-                    padding: 1rem;
-                    color: #bcbcbc;
-                    text-align: center;
-                }
+            #new {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border: none;
+                z-index: 1;
             }
         </style>
     </head>
     <body>
+        <iframe id="new" src="new/zyneon.html?button=no"></iframe>
         <div id="main">
-            <div id="menu" class="flex">
-                <div class="title flex" onclick="location.href = '#header';">
-                    <img alt="Nerofy logo" src="assets/images/logos/nerofy/filled_light.png">
-                    <h3 class="extra-bold">Nerofy</h3>
-                </div>
-                <i class='bx bx-menu toggle' onclick="toggleMenu();"></i>
-                <div class="links">
-                    <a href="#creators">Creators</a>
-                    <a class="button" href="https://cloud.nerofy.de"><i class='bx bxs-cloud'></i>Cloud</a>
-                </div>
-            </div>
             <div id="content">
                 <div class="flex-column">
                     <h2>Das Ende von <strong>Zyneon Studios</strong></h2>
@@ -125,14 +101,17 @@
                     </p>
                 </div>
             </div>
-            <div id="footer"><br>
-                <p>
-                    <a href="https://www.nerofy.de/rechtliches">Impressum und Datenschutzerklärung</a><br>
-                    ©copyright <a href="https://www.nerofy.de">Nerofy Netzwerk</a>. Alle Rechte vorbehalten.
-                </p><br>
+            <div id="footer">
+                <p><a href="rechtliches.html">Impressum und Datenschutzerklärung</a><br>©copyright <a href="https://www.nerofy.de">Nerofy</a>. Alle Rechte vorbehalten.</p>
+                <a onclick="showNew();" style="text-decoration: underline; cursor: pointer;">Zeige die neue Version dieser Seite an</a>
             </div>
         </div>
         <script>
+            function showNew() {
+                document.getElementById('main').style.display = 'none';
+                document.getElementById('new').style.display = 'unset';
+            }
+
             const urlParams = new URLSearchParams(window.location.search);
             if(urlParams.has("type")) {
                 if(urlParams.get("type") === "projects") {

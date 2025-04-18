@@ -168,19 +168,31 @@ body {
                 border-radius: 1rem;
                 background: var(--background3);
             }
-
-            #footer {
-                user-select: none;
-                padding: 2rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background: var(--background);
-                text-align: center;
-            }
         }
     }
+}
+
+#footer {
+    color: var(--foreground2);
+
+    a {
+        font-family: OpenSans-Semibold, sans-serif;
+        text-decoration: none;
+        color: var(--foreground);
+    }
+
+    a:hover {
+        color: var(--accent);
+    }
+
+    user-select: none;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    text-align: center;
 }
 
 .flex {
