@@ -47,7 +47,9 @@ function toggleMenu() {
 }
 
 addEventListener("DOMContentLoaded", () => {
-    initMenu();
+    setTimeout(function (){
+        initMenu();
+    }, 1000);
 });
 
 addEventListener('resize', function() {
