@@ -76,8 +76,8 @@
                 <div class="flex-column">
                     <h2>Das Ende der Studios</h2>
                     <p>
-                        Aufgrund einer großflächigen Umstrukturierung und Ausgliederung der Dienste von Zyneon Studios, ist gerade keine Zyneon Website erreichbar.<br>
-                        Bald wird diese Seite dich zu der neuen Seite und Domain weiterleiten, die mit diesem Team verknüpft ist.<br>
+                        <span id="msg">Zyneon Studios ist nun in unabhängigere Teams, welche nun Mitglied des Nerofy Netzwerkes sind aufgelöst worden.<br>
+                        Da es Zyneon Studios somit nicht mehr so in der Art gibt, leitet dich diese Seite nur noch hier her, schaue gerne unten, wo unsere Teams nun weitermachen.<br></span>
                         <br>
                         Durch einige organisatorische und rechtliche Probleme sind wir leider gezwungen unseren aktuellen Aufbau und das Konstrukt von Zyneon Studios aufzugeben.<br>
                         Wir bedanken uns für die Zeit bis jetzt und freuen uns auf eine noch bessere und stärkere Zukunft in unabhängigeren Teams.
@@ -99,5 +99,13 @@
                 </p><br>
             </div>
         </div>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if(urlParams.has("type")) {
+                if(urlParams.get("type") === "projects") {
+                    document.getElementById("msg").innerHTML = "Aufgrund einer großflächigen Umstrukturierung und Ausgliederung der Dienste von Zyneon Studios, ist diese Zyneon Website gerade nicht erreichbar.<br>Bald wird diese Seite dich zu der neuen Seite und Domain weiterleiten, die mit diesem Team verknüpft ist.<br>";
+                }
+            }
+        </script>
     </body>
 </html>
