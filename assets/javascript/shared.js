@@ -61,3 +61,7 @@ addEventListener('contextmenu',function(e){
 addEventListener('dragstart', function(e){
     e.preventDefault();
 });
+
+if(location.href.includes("nrfy.net")) {
+    location.href = location.href.replaceAll("nrfy.net", "nerofy.de");
+}
