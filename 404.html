@@ -4,14 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zyneon ● Nerofy</title>
-        <link id="style-shared" rel="stylesheet" href="assets/css/shared.css">
-        <link id="style-font" rel="stylesheet" href="assets/fonts/OpenSans/OpenSans.css">
+        <link id="style-shared" rel="stylesheet" href="/assets/css/shared.css">
         <link id="style-icons" rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" >
-        <link id="style-page" rel="stylesheet" href="assets/css/index.css">
-        <link rel="icon" type="image/webp" href="new/assets/nerofy/img/logos/nerofy/light_lined.webp"/>
-        <script src="assets/javascript/shared.js"></script>
-        <script src="assets/javascript/index.js"></script>
+        <link id="style-page" rel="stylesheet" href="/assets/css/index.css">
+        <link rel="icon" type="image/webp" href="/new/assets/nerofy/img/logos/nerofy/light_lined.webp"/>
+        <script src="/assets/javascript/shared.js"></script>
+        <script src="/assets/javascript/index.js"></script>
         <style>
+            * {
+                font-family: sans-serif;
+            }
+
+            #menu {
+                font-size: 1.65rem;
+
+                h3 {
+                    font-size: 2.25rem !important;
+                }
+            }
+
             div.flex-column {
                 top: 20%;
                 justify-content: center;
@@ -47,12 +58,12 @@
         <div id="main">
             <div id="menu" class="flex">
                 <div class="title flex" onclick="location.href = '#header';">
-                    <img alt="Nerofy logo" src="new/assets/nerofy/img/logos/nerofy/filled_light.webp">
+                    <img alt="Nerofy logo" src="/new/assets/nerofy/img/logos/nerofy/filled_light.webp">
                     <h3 class="extra-bold">Nerofy</h3>
                 </div>
                 <i class='bx bx-menu toggle' onclick="toggleMenu();"></i>
                 <div class="links">
-                    <a href="index.html#creators">Creators</a>
+                    <a href="/index.html#creators">Creators</a>
                     <a class="button" href="https://cloud.nerofy.de"><i class='bx bxs-cloud'></i>Cloud</a>
                 </div>
             </div>
@@ -62,12 +73,12 @@
                     <h2>
                         Wir konnten diese Seite leider nicht finden :/
                         <br><br>
-                        <a href="index.html">Startseite</a>
+                        <a href="/index.html">Startseite</a>
                     </h2>
                 </div>
             </div>
             <div id="footer">
-                <p><a href="rechtliches.html">Impressum und Datenschutzerklärung</a><br>©copyright <a href="https://www.nerofy.de">Nerofy</a>. Alle Rechte vorbehalten.</p>
+                <p><a href="/rechtliches.html">Impressum und Datenschutzerklärung</a><br>©copyright <a href="https://www.nerofy.de">Nerofy</a>. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </body>
