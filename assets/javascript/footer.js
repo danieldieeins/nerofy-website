@@ -17,8 +17,7 @@ function initFooter() {
 
 function styleFooter(footer) {
     footer.className = "footer2"
-    footer.style.position = "absolute";
-    footer.style.top = "100%";
+    footer.style.position = "relative";
     footer.style.width = "100%";
     footer.style.backgroundColor = "#000000";
     footer.style.color = "#ffffff";
